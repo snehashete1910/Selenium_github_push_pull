@@ -1,0 +1,23 @@
+package locator;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Locator {
+	@Test
+public void locator()
+{
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver=new ChromeDriver();
+			driver.get("https://login.perf1h.pc-rnd.salesforce.com/");
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
+			driver.manage().window().maximize();
+			driver.findElement(By.xpath("//label[text()='Username']")).getText();
+}
+}
