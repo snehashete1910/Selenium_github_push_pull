@@ -1,0 +1,26 @@
+package program_asked_interview;
+
+public class Swap_number {
+	public static void main(String arg[]) {
+		// TODO Auto-generated method stub
+		System.out.println("login 1.........");
+		int a=10;
+		int b=20;
+		System.out.println(a + "..." +b);
+		int c;
+		c=a;
+		a=b;
+		b=c;
+		System.out.println(a + "..." +b);
+		System.out.println("login 2.........");
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println(a + "..." +b);
+		
+		
+			
+
+	}
+
+}
