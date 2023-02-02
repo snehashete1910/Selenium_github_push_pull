@@ -1,0 +1,10 @@
+package program_asked_interview;
+
+public class palindromestring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
